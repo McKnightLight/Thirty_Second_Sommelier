@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
+require_relative '../config/environment.rb'
 
-require_relative '../lib/thirty_second_sommelier'
-
-CLI.new.start
+ThirtySecondSommelier::CLI.new.call

@@ -1,9 +1,17 @@
-class CLI 
+#our CLI controller
 
-  def start
+class ThirtySecondSommelier::CLI 
+
+  def call
     puts "Welcome to Thirty Second Sommelier!"
-    puts "Please type the number of the category you'd like to learn more about today:"
-    Scraper.scrape_wine_info 
-    #display the list of categories to the user
+  end
+
+  def menu
+    puts "Please enter the number of the category you'd like to learn more about today:"
+  end
+
+  def options
+    #returns a list of options for the user to learn about
+    puts " "
   end
 end

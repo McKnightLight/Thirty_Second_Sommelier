@@ -18,6 +18,10 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = "https://github.com/McKnightLight"
   spec.metadata["changelog_uri"] = "https://github.com/McKnightLight/changelog.md"
 
+  spec.add_development_dependency "nokogiri"
+  spec.add_development_dependency "pry"
+  spec.add_development_dependency "open-uri"
+
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do

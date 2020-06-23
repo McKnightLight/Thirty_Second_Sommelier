@@ -4,14 +4,15 @@ class ThirtySecondSommelier::CLI
 
   def call
     puts "Welcome to Thirty Second Sommelier!"
+    puts "Please choose from the following menu options:"
+    
   end
 
   def menu
-    puts "Please enter the number of the category you'd like to learn more about today:"
+    #shows the main menu by number (e.g., 1. Tasting Wine, 2. Grapes, 3. Regions...) along with exit option (e.g., ...8. EXIT)
   end
 
   def options
     #returns a list of options for the user to learn about
-    puts " "
   end
 end

@@ -1,40 +1,16 @@
-class Scraper
+class ThirtySecondSommelier::Scraper
 
-  attr_accessor :name, :wine, :url
-
-  @@all = []
-
-  def initialize(name, url)
-    self.name = name
-    self.url = url 
-
-    @@all << self 
+  def get_page
+    Nokogiri::HTML(open("https://vinepair.com/wine-101"))
   end
 
-  def self.all
-    @@all
-  end
-end 
+#   def scrape_wines_index
+#      self.get_page.css("div:nth-child(6)")
+#   end
 
-def Scraper 
-
-  def self.scrape 
-    doc = Nokogiri::HTML(open("https://vinepair.com/wine-101"))
-
-    doc.css('.scraped stuff lis').each do |li| 
-    end
-  end
-
-  def grab_list
-
-  end
-
-  def return_objects
-
-  end
-
-  def next_level
-
-  end
-  
-end
+#   def return_objects
+#     get_wines.each do |r|
+#       ThirtySecondSommelier::Wines.new_from_index_page(r)
+#     end
+#   end
+# end
